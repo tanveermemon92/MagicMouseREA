@@ -1,0 +1,65 @@
+# Windows Driver Build Artifacts
+obj/
+bin/
+Debug/
+Release/
+*.lib
+*.obj
+*.res
+*.pdb
+*.wdf
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.vcxproj.user
+
+# Build Logs
+*.log
+*.etl
+*.cab
+
+# Test Results
+TestResults/
+*.trx
+
+# Temp Files
+*.tmp
+*.temp
+*.bak
+
+# System
+Thumbs.db
+.DS_Store
+
+# Git-ignore driver binaries EXCEPT the shipped Apple driver, which users need
+# in the download for a one-click install (see v1-binary-patch/README.md and
+# DMCA-NOTICE.md).
+*.sys
+!v1-binary-patch/apple-driver/applewirelessmouse.sys
+
+# Certificates — none are tracked in this repository
+*.cer
+*.pfx
+*.p12
+
+# Python (if used for scripts)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local research and agent working notes — private, never pushed
+docs/research/
+.ai/
